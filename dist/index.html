@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>LeaderBoard</title>
 <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
 <body>
@@ -12,35 +13,48 @@
             <div class="title">
                 <h1>Leaderboard</h1>
             </div>
-            <div class="scores">
-                <div class="recent">
-                    <h3>Recent Scores</h3>
-                    <button type="button">Refresh</button>
+            <div class="score-area">
+                <div class="scores">
+                    <div class="recent">
+                        <h3>Recent Scores</h3>
+                        <button type="button" id="refresh"><i class="fa fa-refresh" aria-hidden="true"></i>Refresh</button>
+                    </div>
+                    <div class="table-area">
+                        <table id="table">
+                            <tr>
+                                <th>Name</th>
+                                <th>Scores</th>
+                            </tr>
+                            <tr>
+                                <td>Sumon</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Sumon</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Sumon</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Sumon</td>
+                                <td>100</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>Name</th>
-                            <th>Scores</th>
-                        </tr>
-                        <tr>
-                            <td>Sumon</td>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <td>Sumon</td>
-                            <td>100</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="add-score">
-                <div class="form">
-                    <form id="form">
-                        <input type="text" name="name" required id="name">
-                        <input type="text" name="score" required id="score">
-                        <button type="submit">Submit</button>
-                    </form>
+                <div class="add-score">
+                    <div class="add-score-title">
+                        <h3>Add your score</h3>
+                    </div>
+                    <div class="form">
+                        <form id="form">
+                            <input type="text" name="name" required id="name" placeholder="Your Name">
+                            <input type="text" name="score" required id="score" placeholder="Your Score">
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
