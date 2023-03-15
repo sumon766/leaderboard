@@ -1,4 +1,121 @@
-h1 {
-    font-size: 50px;
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+/* font-family: 'Mulish', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.content {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    font-size: 80px;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+}
+
+.score-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.recent, .add-score-title {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.recent button {
+    border: none;
+    padding: 10px 15px;
+    background-color: #c7c7c7;
+    border-radius: 3px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.recent button i {
+    margin-right: 8px;
+}
+
+.table-area table {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 25px;
+    border: 2px solid #121212;
+}
+
+.table-area th, .table-area td {
+    padding: 8px 0px;
+}
+
+.table-area tr:nth-child(even) {
+    background-color: #c7c7c7;
+}
+
+.add-score {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 42px;
+}
+
+#form input[type=text] {
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#form button {
+    font-family: 'Mulish', sans-serif;
+    width: fit-content;
+    padding: 10px 15px;
+    justify-self: flex-end;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: #b8b8b8;
 }
