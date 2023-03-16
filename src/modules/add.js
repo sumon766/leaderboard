@@ -1,4 +1,4 @@
-const apiAddress = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/4bjF3OHKhvPZzw3mxo08/scores';
+const apiAddress = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/UxFOv70nwykBmIpp2The/scores';
 
 const add = async (user, score) => {
   const apiOutput = await fetch(apiAddress, {
