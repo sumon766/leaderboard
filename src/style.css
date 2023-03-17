@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: linear-gradient(to right, rgba(46, 43, 238, 0.61), rgb(118, 32, 189));
+  background-image: linear-gradient(to right, rgba(46, 43, 238, 0.61), rgba(28, 85, 6, 0.76), rgb(118, 32, 189));
 }
 
 .container {
