@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  background-image: linear-gradient(to right, rgba(46, 43, 238, 0.61), rgba(28, 85, 6, 0.76), rgb(118, 32, 189));
+}
+
 .container {
   width: 70%;
   margin: 0 auto;
@@ -30,6 +34,7 @@
   font-size: 80px;
   font-family: 'Mulish', sans-serif;
   margin-bottom: 20px;
+  color: #f2f2f2;
 }
 
 .score-area {
@@ -49,18 +54,20 @@
   justify-content: space-between;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
+  color: #f2f2f2;
 }
 
 .recent button {
   border: none;
   padding: 10px 15px;
-  background-color: #c7c7c7;
+  background-color: #1e0336af;
   border-radius: 3px;
   font-family: 'Mulish', sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   margin-top: 10px;
   cursor: pointer;
+  color: #f2f2f2;
 }
 
 .recent button i {
@@ -71,20 +78,23 @@
   width: 100%;
   font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   border-collapse: collapse;
   text-align: center;
   margin-top: 25px;
-  border: 2px solid #121212;
+  border-left: 2px solid #160863bb;
+  border-right: 2px solid #160863bb;
   overflow: hidden;
 }
 
 .table-area th,
 .table-area td {
   padding: 8px 0;
+  color: #fff;
 }
 
-.table-area tr:nth-child(even) {
-  background-color: #c7c7c7;
+.table-area tr:nth-child(odd) {
+  background-color: #160863bb;
 }
 
 .add-score {
@@ -99,11 +109,26 @@
   margin-top: 42px;
 }
 
-#form input[type=text] {
-  padding: 5px 10px;
+#form input[type=text],
+input[type=number] {
+  padding: 10px 15px;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   margin-bottom: 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(21, 6, 65, 0.555);
+  color: #929292;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 #form button {
@@ -115,5 +140,36 @@
   font-weight: 500;
   cursor: pointer;
   border: none;
-  background-color: #b8b8b8;
+  background-color: #12032ca2;
+  color: #f1eeee;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    padding-bottom: 80px;
+  }
+
+  .title h1 {
+    font-size: 60px;
+  }
+
+  .score-area {
+    flex-wrap: wrap;
+  }
+
+  .scores {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .add-score {
+    width: 100%;
+  }
+
+  #form button {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 500;
+  }
 }

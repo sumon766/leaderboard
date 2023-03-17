@@ -1,4 +1,4 @@
-const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/UxFOv70nwykBmIpp2The/scores';
+const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0XzUf6CCyWHmN8VxTKdA/scores';
 const getAllScore = async () => {
   const output = await fetch(address);
   const allScore = await output.json();
@@ -7,7 +7,6 @@ const getAllScore = async () => {
 
 const show = async () => {
   const table = document.getElementById('table');
-  table.innerHTML = '';
 
   const received = await getAllScore();
 
